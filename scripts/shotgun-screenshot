@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+screenshot=~/Pictures/screenshot/$(date '+%Y-%m-%d-%T')-screenshot.png
+shotgun $screenshot
+xclip -t 'image/png' -selection clipboard -i ~/Pictures/screenshot/$(date '+%Y-%m-%d-%T')-screenshot.png
